@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Disappearing Ninja (Kitty)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matthew Summers">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Click an image to make it disappear</h1>
+        <h3>Click "Restore" to revert changes</h3>
+        <div id="container">
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <div>
+                <img src="cat.jpeg" alt="cat">
+            </div>
+            <button type="button">Restore</button>
+        </div>
+        <script>
+            $('img').click(function(){
+                $(this).hide();
+            });
+            $('button').click(function(){
+                $('img').show();
+            });
+        </script>
+    </body>
+</html>
